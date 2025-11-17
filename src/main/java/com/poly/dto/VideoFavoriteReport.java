@@ -1,10 +1,5 @@
 package com.poly.dto;
 
-public class VideoFavoriteReport {
-
-}
-package com.poly.dto;
-
 import java.util.Date;
 
 public class VideoFavoriteReport {
