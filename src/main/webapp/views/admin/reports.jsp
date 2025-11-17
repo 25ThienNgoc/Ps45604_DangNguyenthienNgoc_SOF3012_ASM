@@ -82,12 +82,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <%-- Giả định reportShares là List<ShareReport> từ Servlet sau khi lọc --%>
+                    <%-- reportShares là List<com.poly.entity.Share> (Share entity).
+                         Use share.user to get sender info and share.emails for receiver list. --%>
                     <c:forEach var="share" items="${reportShares}">
                     <tr>
-                        <td>${share.senderName}</td>
-                        <td>${share.senderEmail}</td>
-                        <td>${share.receiverEmail}</td>
+                        <td>${share.user.fullname}</td>
+                        <td>${share.user.email}</td>
+                        <td>${share.emails}</td>
                         <td><fmt:formatDate value="${share.shareDate}" pattern="dd/MM/yyyy"/></td>
                     </tr>
                     </c:forEach>
