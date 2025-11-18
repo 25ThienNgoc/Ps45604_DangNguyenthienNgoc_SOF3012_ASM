@@ -1,10 +1,40 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>P3_ASM</groupId>
-  <artifactId>P3_ASM</artifactId>
+  <groupId>Ps45604_DangNguyenthienNgoc_SOF3012_ASM</groupId>
+  <artifactId>Ps45604_DangNguyenthienNgoc_SOF3012_ASM</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <dependencies>
+    <dependency>
+        <groupId>jakarta.servlet</groupId>
+        <artifactId>jakarta.servlet-api</artifactId>
+        <version>6.0.0</version>
+        <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+        <groupId>org.hibernate.orm</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>6.5.2.Final</version>
+    </dependency>
+    <dependency>
+        <groupId>org.hibernate.validator</groupId>
+        <artifactId>hibernate-validator</artifactId>
+        <version>8.0.1.Final</version>
+    </dependency>
+
+    <dependency>
+        <groupId>com.microsoft.sqlserver</groupId>
+        <artifactId>mssql-jdbc</artifactId>
+        <version>12.6.0.jre11</version>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.hibernate.orm</groupId>
+        <artifactId>hibernate-c3p0</artifactId>
+        <version>6.5.2.Final</version>
+    </dependency>
+    
     <dependency>
         <groupId>jakarta.servlet.jsp.jstl</groupId>
         <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
@@ -15,8 +45,8 @@
         <artifactId>jakarta.servlet.jsp.jstl</artifactId>
         <version>3.0.1</version>
     </dependency>
-    
-    </dependencies>
+
+</dependencies>
   <build>
     <plugins>
       <plugin>
