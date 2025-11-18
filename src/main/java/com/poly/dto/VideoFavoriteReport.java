@@ -4,15 +4,15 @@ import java.util.Date;
 
 public class VideoFavoriteReport {
     // Tên (ID) của video
-    private String videoId; 
+    private String videoId;
     // Tiêu đề video
-    private String videoTitle; 
+    private String videoTitle;
     // Số lượng người yêu thích
-    private Long favoriteCount; 
+    private Long favoriteCount;
     // Ngày yêu thích mới nhất
-    private Date latestDate; 
+    private Date latestDate;
     // Ngày yêu thích cũ nhất
-    private Date oldestDate; 
+    private Date oldestDate;
 
     // Constructor để JPA mapping
     public VideoFavoriteReport(String videoTitle, Long favoriteCount, Date latestDate, Date oldestDate) {
@@ -21,9 +21,10 @@ public class VideoFavoriteReport {
         this.latestDate = latestDate;
         this.oldestDate = oldestDate;
     }
-    
+
     // Constructor cho Shared Report (để làm mẫu)
-    // public VideoFavoriteReport(String senderName, String senderEmail, String receiverEmail, Date shareDate) { ... } 
+    // public VideoFavoriteReport(String senderName, String senderEmail, String
+    // receiverEmail, Date shareDate) { ... }
 
     // Getters and Setters (Có thể tự tạo hoặc dùng Lombok)
 
@@ -66,3 +67,4 @@ public class VideoFavoriteReport {
     public void setOldestDate(Date oldestDate) {
         this.oldestDate = oldestDate;
     }
+}
